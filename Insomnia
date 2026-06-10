@@ -1,0 +1,170 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Book MVC
+meta:
+  id: wrk_1a30f811de3144f9bb90e28b991c0db6
+  created: 1781124158301
+  modified: 1781124158301
+  description: ""
+collection:
+  - url: http://localhost:3000/books
+    name: Visualizar livros
+    meta:
+      id: req_89fb82c226c646c28845481a017f8b7f
+      created: 1781124170819
+      modified: 1781129780676
+      isPrivate: false
+      description: ""
+      sortKey: -1781124170819
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.6.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/books
+    name: Adicionar Livro
+    meta:
+      id: req_4e85049a6b024b4e822f646ee07491d6
+      created: 1781126095326
+      modified: 1781130732146
+      isPrivate: false
+      description: ""
+      sortKey: -1781124170812.75
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        	{
+        		"title": "Antoine Saint-Exupéry.",
+        		"author": "Pequeno Principe"
+        	}
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.6.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/books/4
+    name: Buscar livro por ID
+    meta:
+      id: req_93c12cd7e56b4f70a35a4d9b7049228d
+      created: 1781126254681
+      modified: 1781130873048
+      isPrivate: false
+      description: ""
+      sortKey: -1781124170809.625
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.6.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/books/3
+    name: Atualizar livro
+    meta:
+      id: req_42d0d9623d5e4a60bb627d951151becd
+      created: 1781126364982
+      modified: 1781130831852
+      isPrivate: false
+      description: ""
+      sortKey: -1781124170806.5
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        	{
+        		"title": "Antoine Saint-Exupéry",
+        		"author": "Pequeno Principe"
+        	}
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.6.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/books/4
+    name: Deletar livro
+    meta:
+      id: req_6d5cfabceb544f55880054cb630d59a4
+      created: 1781129898142
+      modified: 1781130882515
+      isPrivate: false
+      description: ""
+      sortKey: -1781124170756.5
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.6.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_b38af3b0d27ba76cc3575e2869f6797fd70c8907
+    created: 1781124158304
+    modified: 1781124158304
+environments:
+  name: Base Environment
+  meta:
+    id: env_b38af3b0d27ba76cc3575e2869f6797fd70c8907
+    created: 1781124158303
+    modified: 1781124158303
+    isPrivate: false

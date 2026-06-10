@@ -3,24 +3,22 @@ const express = require("express")
 
 const router = express.Router()
 
-app.use(express.json())
-
 const {
-    getbooks,
+    getBooks,
     getBookById,
     createBook,
-    UptdateBook,
+    updateBook,
     deleteBook
 } = require("../controller/bookController")
 
-router.get("/", bookController.getbooks)
+router.get("/", getBooks)
 
-router.get("/:id", bookcontroller.getBookById)
+router.get("/:id", getBookById)
 
-router.post("/", bookcontroller.createBook)
+router.post("/", createBook)
 
-router.put("/:id", bookcontroller.UptdateBook)
+router.put("/:id", updateBook)
 
-router.delete("/:id", bookcontroller.deleteBook)
+router.delete("/:id", deleteBook)
 
 module.exports = router
