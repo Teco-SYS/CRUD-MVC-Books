@@ -1,6 +1,9 @@
 const express = require("express")
 
+
 const router = express.Router()
+
+app.use(express.json())
 
 const {
     getbooks,
@@ -12,12 +15,12 @@ const {
 
 router.get("/", bookController.getbooks)
 
-router.get("/:id", book.controller.getBookById)
+router.get("/:id", bookcontroller.getBookById)
 
-router.post("/", book.controller.createBook)
+router.post("/", bookcontroller.createBook)
 
-router.put("/:id", book.controller.UptdateBook)
+router.put("/:id", bookcontroller.UptdateBook)
 
-router.delete("/:id", book.controller.deleteBook)
+router.delete("/:id", bookcontroller.deleteBook)
 
 module.exports = router
